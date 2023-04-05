@@ -1,8 +1,9 @@
 ## DBMS PROGRAMMING WITH PYTHON AND POSTGRESQL
 
+
 ### Here are the commands you can run to perform actions
 
-```1. First Write Your Commands in commands Directory```
+```1. First Write Your Commands in commands Directory if you want own table structure```
 
 
 #### To connect with database
@@ -28,4 +29,8 @@
 
 
 #### To Update data from particular table
+    1. python update_data.py "New Course Name" id_to_update
 
+
+**Reference Guide** : 
+1. https://www.postgresqltutorial.com/postgresql-python/
