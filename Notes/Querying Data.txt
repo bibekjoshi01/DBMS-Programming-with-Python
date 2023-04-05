@@ -1,0 +1,33 @@
+The following example uses the SELECT statement to return full names and emails of all customers:
+
+SELECT 
+   first_name || ' ' || last_name,
+   email
+FROM 
+   customer;
+
+
+### PostgreSQL Column Alias
+
+    * Assign a column or an expression a column alias using the syntax column_name AS alias_name or expression AS alias_name.
+    * The AS keyword is optional.
+    * Use double quotes (“) to surround a column alias that contains spaces.
+
+    SELECT
+        first_name || ' ' || last_name as "full name"
+    FROM
+        customer;
+
+
+### Order By
+
+    * Use the ORDER BY clause in the SELECT statement to sort rows.
+    * Use the ASC option to sort rows in ascending order and DESC option to sort rows in descending order. The ORDER BY clause uses the ASC option by default.
+    * Use NULLS FIRST and NULLS LAST options to explicitly specify the order of NULL with other non-null values.
+
+    select
+        first_name, last_name, full_name, length(full_name) as full_name_len
+    from
+        base_app_user bau
+    order by first_name asc, last_name asc nulls last ;
+
